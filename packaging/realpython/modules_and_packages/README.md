@@ -1,5 +1,8 @@
 https://realpython.com/python-modules-packages/
 
+- [__init.py__](#initpy)
+- [__all__](#all)
+
 **Find location of an imported module**
 ```python
 >>> import mod
@@ -85,5 +88,5 @@ Invoking __init__.py for pkg
 
 In summary, `__all__` is used by both packages and modules to control what is imported when import * is specified. But the default behavior differs:
 
-For a package, when `__all__` in `__init__.py` is not defined, import * does not import anything.
-For a module, when `__all__` is not defined, import * imports everything (except—you guessed it—names starting with an underscore).
+For a package, when `__all__` in `__init__.py` is not defined, `import * ` does not import anything.
+For a module, when `__all__` is not defined,` import * ` imports everything (except—you guessed it—names starting with an underscore).
